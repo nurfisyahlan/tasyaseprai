@@ -11044,3 +11044,11 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* -------------------------------------------------------------------- */
+
+.brand-script {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  text-transform: none !important;
+}
