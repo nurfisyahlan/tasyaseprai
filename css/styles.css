@@ -11020,6 +11020,14 @@ html {
   font-size: 1.5rem;
 }
 
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content i {
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+.portfolio .portfolio-item:hover .portfolio-item-caption .portfolio-item-caption-content i {
+  color: #f1c40f;
+}
+
 .portfolio-modal .btn-close {
   color: #1abc9c;
   font-size: 2rem;
