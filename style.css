@@ -1,0 +1,59 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    background: url("https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1400&q=80") no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.hero button {
+    font-size: 1rem;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.testimoni {
+    background: #f0f8ff;
+    padding: 60px 0;
+}
+
+.gallery img {
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
