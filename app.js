@@ -3,7 +3,7 @@ function Navbar() {
 return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div className="container">
-        <a className="navbar-brand fw-bold" href="#">Tasya Seprai</a>
+        <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
         <div className="d-flex gap-4">
             <a className="nav-link d-inline text-white" href="#produk">Produk</a>
             <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
