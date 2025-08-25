@@ -61,9 +61,9 @@ return (
 // Gallery Section
 function Gallery() {
 const images = [
-    "https://images.unsplash.com/photo-1600488994436-8a35f8d1e3c2?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1585559605151-9d23844e6bc1?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1598300053650-9d905e6f2741?auto=format&fit=crop&w=800&q=80"
+    "assets/img/sepraimotifbunga.jpg",
+    "assets/img/sepraipolos.jpg",
+    "assets/img/seprai2in1.jpg"
 ];
 
 return (
