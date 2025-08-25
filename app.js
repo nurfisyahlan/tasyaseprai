@@ -1,30 +1,30 @@
 // Navbar
 function Navbar() {
-return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <div className="container">
-        <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
-        <div className="d-flex gap-4">
-            <a className="nav-link d-inline text-white" href="#produk">Produk</a>
-            <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
-            <a className="nav-link d-inline text-white" href="#kontak">Kontak</a>
+    return (
+        <nav className="navbar navbar-expand-lg navbar-dark bg-success bg-gradient fixed-top">
+        <div className="container">
+            <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
+            <div className="d-flex gap-4">
+                <a className="nav-link d-inline text-white" href="#produk">Produk</a>
+                <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
+                <a className="nav-link d-inline text-white" href="#kontak">Kontak</a>
+            </div>
         </div>
-    </div>
-    </nav>
-);
+        </nav>
+    );
 }
 
 // Hero Section
 function Hero() {
-return (
-    <section className="hero text-center">
-    <div>
-        <h1>Kenyamanan Tidur Anda Prioritas Kami 🛏️</h1>
-        <p>Seprai & Bed Cover premium dengan kualitas terbaik dan harga terjangkau</p>
-        <button className="btn btn-light text-primary fw-bold mt-3">Pesan Sekarang</button>
-    </div>
-    </section>
-);
+    return (
+        <section className="hero text-center">
+        <div>
+            <h1>Kenyamanan Tidur Anda Prioritas Kami 🛏️</h1>
+            <p>Seprai & Bed Cover premium dengan kualitas terbaik dan harga terjangkau</p>
+            <button className="btn btn-light text-primary fw-bold mt-3" href="kontak">Pesan Sekarang</button>
+        </div>
+        </section>
+    );
 }
 
 // Produk Section
@@ -199,3 +199,24 @@ function App() {
 // Render
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+
+function Hero() {
+  const scrollToKontak = () => {
+    const kontakSection = document.getElementById("kontak");
+    if (kontakSection) {
+      kontakSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <section className="hero text-center">
+      <div>
+        <h1>Kenyamanan Tidur Anda Prioritas Kami 🛏️</h1>
+        <p>Seprai & Bed Cover premium dengan kualitas terbaik dan harga terjangkau</p>
+        <button onClick={scrollToKontak} className="btn btn-light text-primary fw-bold mt-3">
+          Pesan Sekarang
+        </button>
+      </div>
+    </section>
+  );
+}
