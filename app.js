@@ -7,6 +7,7 @@ function Navbar() {
             <div className="d-flex gap-4">
                 <a className="nav-link d-inline text-white" href="#produk">Produk</a>
                 <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
+                <a className="nav-link d-inline text-white" href="#testimoni">Testimoni</a>
                 <a className="nav-link d-inline text-white" href="#kontak">Kontak</a>
             </div>
         </div>
@@ -116,7 +117,7 @@ return (
 // Testimoni Section
 function Testimoni() {
 return (
-    <section className="testimoni my-5">
+    <section className="testimoni my-5" id="testimoni">
     <div className="container">
         <h2 className="text-center fw-bold mb-4">Apa Kata Pelanggan ❤️</h2>
         <div id="carouselExample" className="carousel slide">
