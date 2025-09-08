@@ -174,12 +174,29 @@ return (
 
 // Footer
 function Footer() {
-return (
-    <footer>
-    <p>&copy; 2025 Tasya Seprai | All Rights Reserved</p>
+  return (
+    <footer className="text-center py-4">
+      <p>&copy; 2025 Tasya Seprai | All Rights Reserved</p>
+
+      {/* Sosial Media */}
+      <div className="social-icons mt-2">
+        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/628123456789" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.tiktok.com/@yourusername" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-tiktok"></i>
+        </a>
+      </div>
     </footer>
-);
+  );
 }
+
 
 // Main App
 function App() {

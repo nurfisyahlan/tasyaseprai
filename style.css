@@ -61,8 +61,27 @@ section {
 }
 
 footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background: #333;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #28a745; /* hijau atau bisa ganti sesuai tema */
 }
