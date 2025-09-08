@@ -43,6 +43,10 @@ body {
 }
 
 .gallery img {
+    width: 100%;
+    height: 250px; /* bisa disesuaikan misalnya 250px */
+    object-fit: cover;
+    border-radius: 10px;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.3s;
