@@ -66,25 +66,25 @@ function Produk() {
     },
     { 
       id: 4, 
-      name: "Set Sprei Polos", 
+      name: "Seprai Anak-Anak", 
       price: "Rp 300.000", 
-      img: "assets/img/sepraipolos.jpg",
+      img: "assets/img/sepraianak.jpg",
       images: [
-        "assets/img/sepraipolos.jpg",
+        "assets/img/sepraianak.jpg",
         "https://images.unsplash.com/photo-1595526114035-56eacaeb963e?auto=format&fit=crop&w=800&q=80"
       ],
-      description: "Set sprei polos dengan pilihan warna yang menenangkan."
+      description: "Seprai yang motifnya lucu dan cocok untuk anak anda"
     },
     { 
       id: 5, 
-      name: "Set Sprei Polos", 
+      name: "Sprei Double 2in1", 
       price: "Rp 300.000", 
-      img: "assets/img/sepraipolos.jpg",
+      img: "assets/img/seprai2in1.jpg",
       images: [
-        "assets/img/sepraipolos.jpg",
+        "assets/img/seprai2in1.jpg",
         "https://images.unsplash.com/photo-1595526114035-56eacaeb963e?auto=format&fit=crop&w=800&q=80"
       ],
-      description: "Set sprei polos dengan pilihan warna yang menenangkan."
+      description: "Satu set seprai yang terdiri dari 2 pasang, seprai atas dan bawah"
     }
   ];
 
