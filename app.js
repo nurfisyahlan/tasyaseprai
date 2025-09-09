@@ -30,34 +30,143 @@ function Hero() {
 
 // Produk Section
 function Produk() {
-const products = [
-    { id: 1, name: "Seprai Motif Bunga", price: "Rp 250.000", img: "assets/img/sepraimotifbunga.jpg" },
-    { id: 2, name: "Bed Cover Minimalis", price: "Rp 350.000", img: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80" },
-    { id: 3, name: "Set Sprei Polos", price: "Rp 300.000", img: "assets/img/sepraipolos.jpg" },
-    { id: 4, name: "Seprai Anak-Anak", price: "Rp 300.000", img: "assets/img/sepraianak.jpg" },
-    { id: 5, name: "Sprei Double 2in1", price: "Rp 300.000", img: "assets/img/seprai2in1.jpg" }
-];
+  const products = [
+    { 
+      id: 1, 
+      name: "Seprai Motif Bunga", 
+      price: "Rp 250.000", 
+      img: "assets/img/sepraimotifbunga.jpg",
+      images: [
+        "assets/img/sepraimotifbunga.jpg",
+        "https://images.unsplash.com/photo-1585559604903-38c35c15fba3?auto=format&fit=crop&w=800&q=80"
+      ],
+      description: "Seprai dengan motif bunga elegan, bahan lembut dan adem."
+    },
+    { 
+      id: 2, 
+      name: "Bed Cover Minimalis", 
+      price: "Rp 350.000", 
+      img: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584132905271-28c98316c4a3?auto=format&fit=crop&w=800&q=80"
+      ],
+      description: "Bed cover minimalis dengan desain modern, cocok untuk kamar kekinian."
+    },
+    { 
+      id: 3, 
+      name: "Set Sprei Polos", 
+      price: "Rp 300.000", 
+      img: "assets/img/sepraipolos.jpg",
+      images: [
+        "assets/img/sepraipolos.jpg",
+        "https://images.unsplash.com/photo-1595526114035-56eacaeb963e?auto=format&fit=crop&w=800&q=80"
+      ],
+      description: "Set sprei polos dengan pilihan warna yang menenangkan."
+    },
+    { 
+      id: 4, 
+      name: "Set Sprei Polos", 
+      price: "Rp 300.000", 
+      img: "assets/img/sepraipolos.jpg",
+      images: [
+        "assets/img/sepraipolos.jpg",
+        "https://images.unsplash.com/photo-1595526114035-56eacaeb963e?auto=format&fit=crop&w=800&q=80"
+      ],
+      description: "Set sprei polos dengan pilihan warna yang menenangkan."
+    },
+    { 
+      id: 5, 
+      name: "Set Sprei Polos", 
+      price: "Rp 300.000", 
+      img: "assets/img/sepraipolos.jpg",
+      images: [
+        "assets/img/sepraipolos.jpg",
+        "https://images.unsplash.com/photo-1595526114035-56eacaeb963e?auto=format&fit=crop&w=800&q=80"
+      ],
+      description: "Set sprei polos dengan pilihan warna yang menenangkan."
+    }
+  ];
 
-return (
+  return (
     <section id="produk" className="container my-5">
-    <h2 className="text-center fw-bold mb-4">Produk Unggulan ✨</h2>
-    <div className="row g-4 justify-content-center">
+      <h2 className="text-center fw-bold mb-4">Produk Unggulan ✨</h2>
+      <div className="row g-4 justify-content-center">
         {products.map((p) => (
-        <div className="col-md-4" key={p.id}>
+          <div className="col-md-4" key={p.id}>
             <div className="card shadow-sm product-card">
-            <img src={p.img} className="card-img-top" alt={p.name} />
-            <div className="card-body text-center">
+              <img src={p.img} className="card-img-top" alt={p.name} />
+              <div className="card-body text-center">
                 <h5 className="card-title">{p.name}</h5>
                 <p className="card-text">{p.price}</p>
-                <button className="btn btn-primary">Cek Katalog</button>
+                {/* Tombol untuk buka modal */}
+                <button 
+                  className="btn btn-primary" 
+                  data-bs-toggle="modal" 
+                  data-bs-target={`#produkModal${p.id}`}
+                >
+                  Cek Katalog
+                </button>
+              </div>
             </div>
+
+            {/* Modal Produk */}
+            <div className="modal fade" id={`produkModal${p.id}`} tabIndex="-1">
+              <div className="modal-dialog modal-lg modal-dialog-centered">
+                <div className="modal-content">
+                  
+                  {/* Header */}
+                  <div className="modal-header">
+                    <h5 className="modal-title">{p.name}</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  {/* Body */}
+                  <div className="modal-body">
+                    {/* Carousel */}
+                    <div id={`carousel${p.id}`} className="carousel slide">
+                      <div className="carousel-inner">
+                        {p.images.map((img, index) => (
+                          <div 
+                            className={`carousel-item ${index === 0 ? "active" : ""}`} 
+                            key={index}
+                          >
+                            <img src={img} className="d-block w-100 rounded" alt={`${p.name} ${index}`} />
+                          </div>
+                        ))}
+                      </div>
+                      <button className="carousel-control-prev" type="button" data-bs-target={`#carousel${p.id}`} data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon"></span>
+                      </button>
+                      <button className="carousel-control-next" type="button" data-bs-target={`#carousel${p.id}`} data-bs-slide="next">
+                        <span className="carousel-control-next-icon"></span>
+                      </button>
+                    </div>
+
+                    {/* Detail Produk */}
+                    <div className="mt-3 text-center">
+                      <h5 className="fw-bold">{p.price}</h5>
+                      <p>{p.description}</p>
+                    </div>
+                  </div>
+
+                  {/* Footer */}
+                  <div className="modal-footer">
+                    <button className="btn btn-success">Pesan via WhatsApp</button>
+                  </div>
+
+                </div>
+              </div>
             </div>
-        </div>
+            {/* End Modal */}
+
+          </div>
         ))}
-    </div>
+      </div>
     </section>
-);
+  );
 }
+
 
 // Gallery Section
 function Gallery() {
