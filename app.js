@@ -44,25 +44,25 @@ function Produk() {
     },
     { 
       id: 2, 
-      name: "Bed Cover Minimalis", 
+      name: "Motif Minimalis", 
       price: "Rp 350.000", 
       img: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
       images: [
         "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1584132905271-28c98316c4a3?auto=format&fit=crop&w=800&q=80"
       ],
-      description: "Bed cover minimalis dengan desain modern, cocok untuk kamar kekinian."
+      description: "Seprai motif minimalis dengan desain modern, cocok untuk kamar kekinian."
     },
     { 
       id: 3, 
-      name: "Set Sprei Polos", 
+      name: "Seprai Motif Polos", 
       price: "Rp 300.000", 
       img: "assets/img/sepraipolos.jpg",
       images: [
         "assets/img/sepraipolos.jpg",
         "https://images.unsplash.com/photo-1595526114035-56eacaeb963e?auto=format&fit=crop&w=800&q=80"
       ],
-      description: "Set sprei polos dengan pilihan warna yang menenangkan."
+      description: "Set sprei polos dengan pilihan dan kombinasi warna yang bervariasi dan menenangkan."
     },
     { 
       id: 4, 
