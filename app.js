@@ -37,8 +37,9 @@ function Produk() {
       price: "Rp 250.000", 
       img: "assets/img/sepraimotifbunga.jpg",
       images: [
-        "assets/img/sepraimotifbunga.jpg",
-        "https://images.unsplash.com/photo-1585559604903-38c35c15fba3?auto=format&fit=crop&w=800&q=80"
+        "assets/img/sepraimotifbunga.jpg",        
+        "assets/img/bunga01.jpg",        
+        "assets/img/bunga02.jpg",        
       ],
       description: "Seprai dengan motif bunga elegan, bahan lembut dan adem."
     },
