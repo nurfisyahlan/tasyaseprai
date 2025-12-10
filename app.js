@@ -1,7 +1,7 @@
 // Navbar
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-success bg-gradient fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-info bg-gradient fixed-top">
           <div className="container">            
               <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
               <div className="d-flex gap-4">
