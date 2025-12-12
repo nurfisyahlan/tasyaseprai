@@ -2,16 +2,30 @@
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-info bg-gradient fixed-top">
-          <div className="container">            
-              <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
-              <div className="d-flex gap-4">
-                  <a className="nav-link d-inline text-white" href="#produk">Produk</a>
-                  <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
-                  <a className="nav-link d-inline text-white" href="#testimoni">Testimoni</a>
-                  <a className="nav-link d-inline text-white" href="#kontak">Kontak</a>
+          <div className="container">
+            <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
+
+            <div className="d-flex gap-4">
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#produk">Produk</a>
               </div>
+
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
+              </div>
+
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#testimoni">Testimoni</a>
+              </div>
+
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#kontak">Kontak</a>
+              </div>
+            </div>
+
           </div>
         </nav>
+
     );
 }
 
