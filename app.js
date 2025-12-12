@@ -243,7 +243,7 @@ function Testimoni() {
 return (
     <section className="testimoni my-5" id="testimoni">
     <div className="container">
-        <h2 className="text-center fw-bold mb-4">Apa Kata Pelanggan ❤️</h2>
+        <h2 className="text-center fw-bold mb-4">Testimoni</h2>
         <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
             <div className="carousel-item active text-center">

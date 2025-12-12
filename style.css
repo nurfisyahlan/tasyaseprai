@@ -61,7 +61,7 @@ body {
 }
 
 .testimoni {
-    background: #f0f8ff;
+    background: #f0f5ff79;
     padding: 60px 0;
 }
 
@@ -86,8 +86,6 @@ body {
 .modal-body {
   padding: 15px; /* lebih rapat */
 }
-
-
 
 section {
   scroll-margin-top: 80px; /* modern */
