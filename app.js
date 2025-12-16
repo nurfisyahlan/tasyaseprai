@@ -1,17 +1,31 @@
 // Navbar
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-success bg-gradient fixed-top">
-          <div className="container">            
-              <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
-              <div className="d-flex gap-4">
-                  <a className="nav-link d-inline text-white" href="#produk">Produk</a>
-                  <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
-                  <a className="nav-link d-inline text-white" href="#testimoni">Testimoni</a>
-                  <a className="nav-link d-inline text-white" href="#kontak">Kontak</a>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-info bg-gradient fixed-top">
+          <div className="container">
+            <a className="navbar-brand fw-bold" href="#">tasyaseprai</a>
+
+            <div className="d-flex gap-4">
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#produk">Produk</a>
               </div>
+
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#gallery">Gallery</a>
+              </div>
+
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#testimoni">Testimoni</a>
+              </div>
+
+              <div className="nav-item-custom">
+                <a className="nav-link d-inline text-white" href="#kontak">Kontak</a>
+              </div>
+            </div>
+
           </div>
         </nav>
+
     );
 }
 
@@ -229,7 +243,7 @@ function Testimoni() {
 return (
     <section className="testimoni my-5" id="testimoni">
     <div className="container">
-        <h2 className="text-center fw-bold mb-4">Apa Kata Pelanggan ❤️</h2>
+        <h2 className="text-center fw-bold mb-4">Testimoni</h2>
         <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
             <div className="carousel-item active text-center">
